@@ -1,9 +1,16 @@
 using Microsoft.EntityFrameworkCore;
 using SistemaAgendamentoTarefas.Context;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// Exibindo a descrição do 'enum' ao invés do valor
+builder.Services.AddControllers().AddJsonOptions(options =>
+            options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()));
+
+// Direcionamento da ConnectionString
 builder.Services.AddDbContext<OrganizadorContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
 
