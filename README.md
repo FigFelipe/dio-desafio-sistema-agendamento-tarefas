@@ -1,5 +1,15 @@
-# DIO - Trilha .NET - API e Entity Framework
+# Desafio DIO - Trilha .NET - API e Entity Framework
 www.dio.me
+
+## Autor
+- [Felipe Figueiredo Bezerra](https://github.com/FigFelipe)
+
+## Ambiente de Desenvolvimento
+
+ - **IDE**: Visual Studio 22 (Community Edition)
+ - **SDK:** .NET Core
+ - **Banco de Dados:** Microsoft SQL Express
+ - **Framework:** Entity Framework
 
 ## Desafio de projeto
 Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de API e Entity Framework, da trilha .NET da DIO.
@@ -13,7 +23,7 @@ A sua aplicação deverá ser do tipo Web API ou MVC, fique a vontade para imple
 
 A sua classe principal, a classe de tarefa, deve ser a seguinte:
 
-![Diagrama da classe Tarefa](diagrama.png)
+![Diagrama da classe Tarefa](SistemaAgendamentoTarefas/diagrama.png)
 
 Não se esqueça de gerar a sua migration para atualização no banco de dados.
 
@@ -24,7 +34,7 @@ Não se esqueça de gerar a sua migration para atualização no banco de dados.
 **Swagger**
 
 
-![Métodos Swagger](swagger.png)
+![Métodos Swagger](SistemaAgendamentoTarefas/swagger.png)
 
 
 **Endpoints**
